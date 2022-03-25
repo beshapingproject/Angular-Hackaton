@@ -1,1 +1,1245 @@
-/* You can add global styles to this file, and also import other style files */
+@import "https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css";
+@import "https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css";
+@import "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css";
+
+
+#navbar-toggler-mini {
+  display: none !important;
+}
+
+.main-navigation .navbar-nav a,
+.main-navigation .navbar-nav > li.menu-item > a {
+  font-weight: bolder;
+}
+
+#pass1,
+#pass2,
+label[for="pass1"],
+label[for="pass2"] {
+  display: none !important;
+}
+
+.profile-header__body .item-activity {
+  display: none !important;
+}
+
+.search-form:after {
+  display: none !important;
+}
+
+.widget_ultimate_posts .entry-image {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-navbar-nav-menu-container #custom_header {
+  display: none !important;
+}
+
+.login_button a,
+.back_button a,
+.event_back_button a {
+  color: white !important;
+}
+
+#compose-personal-li {
+  display: none;
+}
+
+.time-since {
+  display: block !important;
+}
+
+.region__container {
+  width: 100%;
+  max-width: none !important;
+}
+
+.header-news {
+  flex: none !important;
+  max-width: 100% !important;
+}
+
+#buddypress:not(.youzer)
+  div.item-list-tabs.primary-list-tabs
+  > ul
+  > li.selected
+  > a
+  span {
+  border-color: #f30d48 !important;
+  background: #f30d48 !important;
+}
+
+.widget-title {
+  color: #2f74c0 !important;
+  font-weight: 600 !important;
+}
+
+.tribe-events-event-image {
+  margin: auto !important;
+  width: 80% !important;
+}
+
+.single-post-back {
+  margin-top: 60px;
+  margin-bottom: 0px !important;
+}
+
+.single-newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px !important;
+}
+
+.event-thumb {
+  width: 75%;
+  margin-top: 25%;
+}
+
+.event-thumb2 {
+  width: 50%;
+  margin-top: 5%;
+}
+
+.pres-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.title-table {
+  color: #2f74c0;
+}
+
+#tribe-events {
+  display: flex;
+}
+
+.title-sidebar h2 {
+  background: #2f74c0;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.icon-down {
+  max-width: 15% !important;
+}
+
+.tribe-events-button-login {
+  background-color: #2f74c0;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  font-family: Poppins;
+}
+
+.tribe-events-button-login:hover {
+  color: white;
+}
+
+.login_button {
+  float: right;
+  margin-bottom: 25px;
+}
+
+.back_button {
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.event_back_button {
+  margin-top: 60px !important;
+}
+
+.back_button a:before,
+.event_back_button a:before {
+  font-family: FontAwesome;
+  content: "";
+  margin-right: 0.3rem;
+}
+
+.tribe-events-notices {
+  background: #2f74c0 !important;
+  margin-bottom: 0px !important;
+  margin-top: 20px !important;
+}
+
+.bp-notifications-nav {
+  display: none !important;
+}
+
+.grid-event {
+  display: flex;
+  /*  align-items: center;
+      justify-content: center;*/
+}
+
+p.tribe-mini-calendar-day-link-event {
+  position: absolute;
+  color: black !important;
+  padding-top: 6px !important;
+}
+
+.tribe-mini-calendar-no-event {
+  /*padding: 17px 0 15px!important;*/
+}
+
+.page-events {
+  display: flex;
+}
+
+.events-widget-area {
+}
+
+img {
+  padding: 0 !important;
+  max-width: 100% !important;
+  margin-bottom: 0px !important;
+}
+
+.site-content {
+  padding-top: 20px !important;
+}
+
+.region__container {
+  padding-top: 0% !important;
+}
+
+.claim {
+  width: 100%;
+  height: 15rem;
+  overflow-y: hidden;
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.claim img {
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+.claim p {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #000000;
+}
+
+/*WALL*/
+.grimlock--page-header {
+  display: none !important;
+}
+
+.d-inline-block {
+  width: 100% !important;
+}
+
+.send-to-input {
+  /*display: none!important;*/
+}
+
+.standard-form p {
+  display: none !important;
+}
+
+.event-card-header {
+  min-height: 200px;
+}
+
+.card-news-body-title a {
+  color: inherit !important;
+}
+
+.cover-btn-edit {
+  margin-top: 30px !important;
+}
+
+.export-button {
+  display: none !important;
+}
+
+.tribe-events-button-news {
+  display: flex;
+  justify-content: center;
+  background-color: white !important;
+  color: #2f74c0 !important;
+  /*    background-color: #323a50!important;
+        color: white !important;*/
+  background-image: none;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 6px 9px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  zoom: 1;
+}
+
+.tribe-events-button-download {
+  display: flex;
+  justify-content: center;
+  background-color: #2f74c0 !important;
+  color: white !important;
+  background-image: none;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 6px 9px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  zoom: 1;
+}
+
+.tribe-event-schedule-details-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-categ {
+  color: #2f74c0 !important;
+}
+
+.email {
+  color: white !important;
+}
+
+.header-events {
+  display: flex;
+}
+
+.tribe-events-pg-template {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.card-news-body-title {
+  text-align: center;
+  top: 30%;
+  position: absolute;
+}
+
+.card-news-body-title,
+.card-pres-body-title {
+  font-size: 1.1rem !important;
+}
+
+.table-news tbody tr .title-news {
+  font-size: 14px;
+}
+
+.table-news tbody tr td a {
+  display: flex;
+  justify-content: center;
+}
+
+.widget_ultimate_posts h2 {
+  color: #2f74c0;
+}
+
+.sidebar--buddypress .widget .entry-title a:hover {
+  color: #2f74c0 !important;
+}
+
+.documentsBox a {
+  font-size: 1rem !important;
+}
+
+.documentsBox a:hover {
+  color: #2f74c0 !important;
+}
+
+.documentsBox a:focus {
+  color: #2f74c0 !important;
+}
+
+.documentsBox .content {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.doc-table td {
+  font-size: 14px;
+}
+
+/* MODIFICHE PER COVER PROFILO */
+.cover-btn-edit,
+#change-cover-image-personal-li {
+  display: none !important;
+}
+
+/* TOOLS */
+
+.page-tool {
+  margin-bottom: 3rem !important;
+  /*display: grid;*/
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+}
+
+.main-tools {
+  /*text-align: center;*/
+}
+
+.tool-cards {
+  margin-top: 20px;
+  width: 250px !important;
+  display: inline-grid;
+  margin-right: 20px;
+}
+
+.card-text {
+  text-align: center;
+  color: #373737;
+  font-size: 20px;
+}
+
+.card-body-tool {
+  padding: 20px !important;
+}
+
+.abstract-tool {
+  font-size: 15px;
+  min-height: 110px;
+}
+
+/*SEARCH*/
+.masonry-brick {
+  margin-top: 65px !important;
+}
+
+/* NEWSLETTER */
+.templateContainer {
+  max-width: 100% !important;
+}
+
+.card-news-body-header {
+  min-height: 79px !important;
+}
+
+.card-news {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.card-news:before {
+  content: " ";
+  /*Da commentare*/
+  background: url("/wp-content/themes/be-we-theme/assets/images/HeaderHOME.jpg");
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.img-news {
+  margin-right: 30px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.img-left {
+  margin-right: 35px;
+}
+
+.card-news:not(.card-static):hover {
+  box-shadow: 0 20px 20px #d4d3d3;
+  transform: translate3d(0, -6px, 0);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.estratto {
+  display: none;
+}
+
+div.all-newsletter-cpt > div:first-child {
+  width: 80% !important;
+  max-width: 80% !important;
+  flex: 100% !important;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+div.all-newsletter-cpt > div:first-child .card-content {
+  display: inline;
+  flex-direction: column;
+}
+div.all-newsletter-cpt > div:first-child .card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+div.all-newsletter-cpt > div:first-child .img-news {
+  display: block;
+}
+
+.card-body .img-news {
+  display: none;
+}
+
+div.all-newsletter-cpt > div:first-child .card-news:before {
+  background: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 3px solid #161f4e;*/
+}
+
+div.all-newsletter-cpt > div:first-child .tribe-events-button-news {
+  display: flex;
+  justify-content: center;
+  background-color: #323a50 !important;
+  color: white !important;
+  background-image: none;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 6px 9px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  zoom: 1;
+  float: right;
+}
+
+div.all-newsletter-cpt > div:first-child .card-news {
+  box-shadow: 5px 5px 5px #cecece;
+  min-height: 235px;
+}
+
+div.all-newsletter-cpt > div:first-child .estratto {
+  display: block;
+  min-height: 140px;
+}
+
+div.all-newsletter-cpt > div:first-child .tribe-events-button-news {
+  width: 50% !important;
+  box-shadow: 2px 2px 8px 0px #bcbcbc;
+}
+
+div.all-newsletter-cpt > div:first-child .card-news-body-title {
+  display: none;
+}
+
+div.all-newsletter-cpt > div:first-child .card-news-body-first-title {
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.all-newsletter-cpt > div:first-child .card-news-body-first-title a {
+  color: white;
+}
+
+.card-news-body-first-title {
+  display: none;
+}
+
+.tribe-events-event-details {
+  z-index: 10 !important;
+  position: relative;
+}
+
+.card-news-body-title {
+  margin-bottom: 20px !important;
+  color: white !important;
+}
+
+div.all-newsletter-cpt > div:first-child .card-news-body-title {
+  color: black !important;
+}
+div.all-newsletter-cpt > div:first-child .card-content {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.card-pres-body-title a {
+  color: #4c516b !important;
+}
+
+/*Calendar*/
+.event-card-title {
+  font-size: 18px !important;
+}
+
+.tribe-events-cal-links {
+  display: none !important;
+}
+
+.button-export {
+  display: none !important;
+}
+
+.header-card-event {
+  min-height: 170px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-posts .card .entry-title,
+.card-news,
+.blog-posts .card .entry-title a,
+.archive-posts .card .entry-title,
+.archive-posts .card .entry-title a,
+.grimlock-query-section__posts .card .entry-title,
+.grimlock-query-section__posts .card .entry-title a,
+.grimlock-term-query-section__terms .card .entry-title,
+.grimlock-term-query-section__terms .card .entry-title a,
+.bp_register #register-page .standard-form .register-section .entry-title,
+.bp_register #register-page .standard-form .register-section .entry-title a,
+#buddypress:not(.youzer)
+  #activity-stream.grimlock-buddypress-activity-list
+  .activity-item
+  .entry-title,
+#buddypress:not(.youzer)
+  #activity-stream.grimlock-buddypress-activity-list
+  .activity-item
+  .entry-title
+  a,
+.bp-card-list__item .card .entry-title,
+.bp-card-list__item .card .entry-title a,
+.lwa.lwa-divs-only .entry-title,
+.lwa.lwa-divs-only .entry-title a,
+.buddypress.directory.members .region--9-3-cols-left .widget .entry-title,
+.buddypress.directory.members .region--9-3-cols-left .widget .entry-title a,
+.buddypress.directory.members .region--3-9-cols-left .widget .entry-title,
+.buddypress.directory.members .region--3-9-cols-left .widget .entry-title a,
+.buddypress.directory.activity .region--9-3-cols-left .widget .entry-title,
+.buddypress.directory.activity .region--9-3-cols-left .widget .entry-title a,
+.buddypress.directory.activity .region--3-9-cols-left .widget .entry-title,
+.buddypress.directory.activity .region--3-9-cols-left .widget .entry-title a,
+.buddypress.directory.groups .region--9-3-cols-left .widget .entry-title,
+.buddypress.directory.groups .region--9-3-cols-left .widget .entry-title a,
+.buddypress.directory.groups .region--3-9-cols-left .widget .entry-title,
+.buddypress.directory.groups .region--3-9-cols-left .widget .entry-title a,
+.sidebar--buddypress .widget .entry-title,
+.sidebar--buddypress .widget .entry-title a,
+.post-save-options.messages-container .entry-title,
+.post-save-options.messages-container .entry-title a,
+.bp-messages-wrap .entry-title,
+.bp-messages-wrap .entry-title a,
+html body .bp-messages-wrap.bp-messages-mobile .entry-title,
+html body .bp-messages-wrap.bp-messages-mobile .entry-title a,
+#request-review-list .bupr-row .entry-title,
+#request-review-list .bupr-row .entry-title a,
+.bgr-single-review .bupr-row .entry-title,
+.bgr-single-review .bupr-row .entry-title a,
+form > .bp-member-add-form .entry-title,
+form > .bp-member-add-form .entry-title a,
+.bupr-shortcode-top-members-contents .bupr-member-main .entry-title,
+.bupr-shortcode-top-members-contents .bupr-member-main .entry-title a,
+.users-blocked .entry-title,
+.users-blocked .entry-title a,
+#buddypress:not(.youzer)
+  #activity-stream.grimlock-buddypress-activity-list
+  .load-more
+  > a
+  .entry-title,
+#buddypress:not(.youzer)
+  #activity-stream.grimlock-buddypress-activity-list
+  .load-more
+  > a
+  .entry-title
+  a,
+#buddypress:not(.youzer)
+  #activity-stream.grimlock-buddypress-activity-list
+  .load-newest
+  > a
+  .entry-title,
+#buddypress:not(.youzer)
+  #activity-stream.grimlock-buddypress-activity-list
+  .load-newest
+  > a
+  .entry-title
+  a,
+.buddypress.directory.members
+  #buddypress:not(.youzer)
+  .bps_filters
+  .entry-title,
+.buddypress.directory.members
+  #buddypress:not(.youzer)
+  .bps_filters
+  .entry-title
+  a,
+#articles-dir-list #articles-container > #message .entry-title,
+#articles-dir-list #articles-container > #message .entry-title a,
+#bbp-search-form .entry-title,
+#bbp-search-form .entry-title a,
+.profile-content__body #subnav ~ form.standard-form .entry-title,
+.profile-content__body #subnav ~ form.standard-form .entry-title a,
+.buddypress.settings.bp-user.privacy
+  .profile-content__body
+  #subnav
+  ~ form
+  .entry-title,
+.buddypress.settings.bp-user.privacy
+  .profile-content__body
+  #subnav
+  ~ form
+  .entry-title
+  a,
+.profile-content__body .screen-profile .entry-title,
+.profile-content__body .screen-profile .entry-title a,
+#docs-filter-sections .docs-filter-section .entry-title,
+#docs-filter-sections .docs-filter-section .entry-title a,
+table.doctable .entry-title,
+table.doctable .entry-title a,
+div.doc-content .entry-title,
+div.doc-content .entry-title a,
+#doc-attachments-ul .entry-title,
+#doc-attachments-ul .entry-title a,
+#buddypress div.doc-permissions .entry-title,
+#buddypress div.doc-permissions .entry-title a,
+.create-new-folder .entry-title,
+.create-new-folder .entry-title a,
+.docs-folder-manage li .folder-info .entry-title,
+.docs-folder-manage li .folder-info .entry-title a,
+.card .entry-title,
+.card .entry-title a,
+.bg-card .entry-title,
+.bg-card .entry-title a,
+.comment-body .entry-title,
+.comment-body .entry-title a,
+.card.card-static .entry-title,
+.card.card-static .entry-title a,
+.comment-respond .entry-title,
+.comment-respond .entry-title a,
+.single .wp-playlist-light .entry-title,
+.single .wp-playlist-light .entry-title a,
+.wp-block-latest-posts li .entry-title,
+.wp-block-latest-posts li .entry-title a,
+.wp-block-categories.wp-block-categories-list > li .entry-title,
+.wp-block-categories.wp-block-categories-list > li .entry-title a,
+.wp-block-archives.wp-block-archives-list > li .entry-title,
+.wp-block-archives.wp-block-archives-list > li .entry-title a,
+article[id*="post-"] > .entry-content > #loginform .entry-title,
+article[id*="post-"] > .entry-content > #loginform .entry-title a,
+.modal .modal-content .entry-title,
+.modal .modal-content .entry-title a,
+.grimlock-section.section--boxed.section_content_reveal
+  .region__col--2
+  > div
+  .entry-title,
+.grimlock-section.section--boxed.section_content_reveal
+  .region__col--2
+  > div
+  .entry-title
+  a,
+.grimlock--page-content .entry-title,
+.grimlock--page-content .entry-title a,
+.posts-filters .entry-title,
+.posts-filters .entry-title a,
+.posts-filters .priority-nav__dropdown .entry-title,
+.posts-filters .priority-nav__dropdown .entry-title a,
+.posts-filters .priority-nav__dropdown .entry-title,
+.posts-filters .priority-nav__dropdown .entry-title a,
+#secondary-left .widget .entry-title,
+#secondary-left .widget .entry-title a,
+#secondary-right .widget .entry-title,
+#secondary-right .widget .entry-title a,
+.page-template-template-dashboard #main .widget-area .widget .entry-title,
+.page-template-template-dashboard #main .widget-area .widget .entry-title a,
+#buddypress > .pos-r > .bps_form .entry-title,
+#buddypress > .pos-r > .bps_form .entry-title a,
+#tribe-bar-form .entry-title,
+#tribe-bar-form .entry-title a,
+.tribe-events-list .tribe-events-loop .type-tribe_events .card .entry-title,
+.tribe-events-list .tribe-events-loop .type-tribe_events .card .entry-title a,
+#tribe-geo-map-wrapper .entry-title,
+#tribe-geo-map-wrapper .entry-title a,
+#rsvp-now .entry-title,
+#rsvp-now .entry-title a,
+#tribe-events-content form.cart .entry-title,
+#tribe-events-content form.cart .entry-title a,
+.tribe-rsvp-list > .tribe-item .entry-title,
+.tribe-rsvp-list > .tribe-item .entry-title a,
+.tribe-orders-list .tribe-tickets-list > .tribe-item .entry-title,
+.tribe-orders-list .tribe-tickets-list > .tribe-item .entry-title a,
+#tribe-community-events .entry-title,
+#tribe-community-events .entry-title a,
+.tribe-community-events-content > #tribe-events .entry-title,
+.tribe-community-events-content > #tribe-events .entry-title a,
+body[class*="tribe_community"]
+  #tribe-events-pg-template
+  #tribe-events
+  .entry-title,
+body[class*="tribe_community"]
+  #tribe-events-pg-template
+  #tribe-events
+  .entry-title
+  a,
+.tribe-block__tickets__registration__event .entry-title,
+.tribe-block__tickets__registration__event .entry-title a,
+#tribe-events-report .entry-title,
+#tribe-events-report .entry-title a,
+div.grimlock-buddypress-groups-section ul#groups-list > li .entry-title,
+div.grimlock-buddypress-groups-section ul#groups-list > li .entry-title a,
+#buddypress:not(.youzer)
+  #activity-stream.grimlock-buddypress-activity-list
+  .activity-item
+  div.activity-comments
+  .acomment-meta
+  a,
+#buddypress:not(.youzer) #profile-content__nav ul li > a,
+#buddypress:not(.youzer) #profile-content__nav .priority-nav__dropdown-toggle,
+#secondary-right.sidebar--buddypress .widget h2.widget-title,
+#secondary-right.sidebar--buddypress .widget h3.widget-title,
+.grimlock-author-avatars__user span.name,
+#articles-dir-list .article-container .article-data .title,
+.webui-popover-bp-extended-friendship-popup .webui-popover-title,
+.bupr-content-widget .bupr-member-title a,
+a.bps-toggle-modal,
+[class*="widget_recent_bp_docs"] ul li a:not(:hover),
+#buddypress table.doctable td.title-cell > a:not(:hover),
+.members-dir-map-sidebar .bps-label,
+.members-dir-map-sidebar .widget-title,
+.members-map .gm-style .gm-style-iw-c .members-map-pin-popup__name,
+.card .entry-title,
+.card .entry-title a,
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6,
+.wp-block-latest-posts li,
+#buddypress .bboss_search_page ul.item-list li .entry-title,
+#buddypress .bboss_search_page ul.item-list li .item-title,
+#buddypress .bboss_search_page ul.item-list li .item-title a,
+#buddypress .activity-list .activity-content .activity-header,
+#buddypress .activity-list .activity-content .comment-header,
+body:not([class*="yz-"])
+  #bbpress-forums
+  ul.bbp-replies
+  li
+  .bbp-list-author
+  .bbp-author-name,
+#bbpress-forums fieldset.bbp-form legend,
+#secondary-left .widget-title,
+#secondary-right .widget-title,
+.page-template-template-dashboard #main .widget-area .widget .widget-title,
+#tribe-events-content
+  table.tribe-events-calendar
+  div[id*="tribe-events-event-"]
+  h3.tribe-events-month-event-title,
+.tribe-community-events .tribe-section .tribe-section-header h3,
+.tribe-events-ajax-loading,
+div.tribe-this-week-widget-wrapper .entry-title,
+.tribe-events-venue-widget
+  .tribe-venue-widget-venue
+  .tribe-venue-widget-venue-name {
+  color: #48465b;
+}
+#secondary-right .widget > .widget-title,
+#secondary-left .widget > .widget-title,
+.page-template-template-dashboard #main .widget-area .widget > .widget-title {
+  border-left-color: #2f74c0;
+}
+#secondary-left .widget > .widget-title,
+#secondary-right .widget > .widget-title,
+.page-template-template-dashboard #main .widget-area .widget > .widget-title {
+  font-size: 0.9rem;
+  position: relative;
+  width: auto;
+  margin: -1rem -1rem 1rem -1rem;
+  padding: 1rem 1rem 0 1rem;
+  display: block;
+  line-height: 1em;
+  border-left: 2px solid #2f74c0;
+}
+#homepage-anchor,
+.select-style select,
+.nav-register a,
+#buddypress .bboss_search_page ul.item-list li .entry-title,
+.media-heading,
+body:not([class*="yz-"]) #bbpress-forums fieldset.bbp-form legend,
+ul.wpp-list .wpp-meta,
+ul.wpp-list .post-stats,
+.widget_grimlock_term_query_section
+  .terms.grimlock-term-query-section__terms
+  [id^="term-"]
+  h2.card__title.entry-title,
+ul.wpp-list li .wpp-post-title,
+ul.wpp-list li > a:not(.wpp-post-title):before,
+#secondary-left .widget-title,
+#secondary-right .widget-title,
+.page-template-template-dashboard #main .widget-area .widget .widget-title,
+.ld-course-navigation .ld-home-link,
+.learndash-wrapper
+  .ld-user-status.ld-is-widget
+  .ld-item-list
+  .ld-item-list-item
+  .ld-item-list-item-preview
+  .ld-item-title,
+.learndash-wrapper
+  .ld-course-navigation
+  .ld-lesson-item-section-heading
+  .ld-lesson-section-heading,
+[class*="widget_recent_bp_docs"] ul li a,
+#buddypress table.doctable td.title-cell > a {
+  font-family: Poppins;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.documents_link {
+  cursor: pointer;
+}
+
+.documents_link .content p:last-child {
+  margin-bottom: 0px;
+}
+
+#tribe-events-bar #tribe-bar-filters-wrap {
+  width: 100%;
+}
+
+.tribe-events-meta-group {
+  margin-top: 20px;
+}
+
+.documentsLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 5px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.tribe-events-single-event-description .tribe-events-meta-group {
+  display: none;
+}
+
+.tribe-events-single-event-description
+  .tribe-events-meta-group.tribe-events-meta-group-other {
+  display: block;
+}
+
+#widget_recent_bp_docs-2 ul li.documentsBox {
+  height: 90px;
+}
+
+#widget_recent_bp_docs-2 ul li.documentsBox::before {
+  height: 100%;
+}
+
+#widget_recent_bp_docs-2 ul li.documentsBox .description {
+  font-weight: normal;
+  display: block;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+#widget_recent_bp_docs-2 ul li.documentsBox .post-date {
+  text-align: right;
+}
+
+.tribe-events-cal-links a {
+  background-color: #48465b !important;
+}
+
+.filterBox {
+  box-shadow: 0px 0px 15px 0px rgba(82, 63, 105, 0.05);
+  background-color: white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-radius: 5px;
+  margin-bottom: 3%;
+}
+
+.filterBox select {
+  background: none;
+}
+
+.filterBox label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 5px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.filterBox .tribe-events-button {
+  margin-top: 18px;
+  display: block;
+  width: 100%;
+}
+
+.filterBox .keyword {
+  padding-top: 18px;
+}
+
+input.form-control.form-input {
+  border: 0px;
+  background: none;
+  border-radius: 0;
+  border-bottom: 2px solid rgba(0, 0, 20, 0.05);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.tribe-events-sub-nav a:hover {
+  background-color: #2f74c0 !important;
+  border-color: #2f74c0 !important;
+}
+
+.dataTables_length {
+  display: none;
+}
+
+.dataTables_filter {
+  display: none;
+}
+
+.different-talents-page {
+  margin-top: 35px;
+}
+
+.different-talents-page .different-talents-box {
+  margin-bottom: 15px;
+}
+
+.tribe-bar-location-filter {
+  float: left;
+  margin-bottom: 0;
+  padding: 15px;
+  width: 16%;
+}
+
+.tribe-bar-location-filter select {
+  background: none;
+  height: auto !important;
+}
+
+.dataTables_paginate a:hover {
+  background-color: #2f74c0 !important;
+  border-color: #2f74c0 !important;
+}
+
+.grimlock-site_identity .site-logo img {
+  max-width: 100px !important;
+}
+
+.custom-logo {
+  max-width: 100px !important;
+  height: auto !important;
+}
+
+#contacts .mobile {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  #contacts .mobile {
+    display: block;
+  }
+}
+
+.dataTables_paginate .page-item a {
+  color: #2f74c0 !important;
+}
+
+.dataTables_paginate .page-item.ative a {
+  color: #2f74c0 !important;
+}
+
+@media (max-width: 991.98px) {
+  .dataTables_info {
+    display: none;
+  }
+  .dataTables_paginate .page-item {
+    display: none;
+  }
+  .dataTables_paginate .page-item.previous {
+    display: block;
+  }
+  .dataTables_paginate .page-item.next {
+    display: block;
+  }
+}
+
+.listDocuments {
+  padding-bottom: 100px;
+}
+
+#vertical-navigation {
+  width: 275px !important;
+}
+
+.slideout-wrapper {
+  width: 275px !important;
+}
+
+@media (min-width: 992px) {
+  #site {
+    margin-left: 275px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .custom_header_mobile .region__inner {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+#contactsPage {
+  display: none;
+}
+
+.searchBox {
+  margin-bottom: 20px;
+}
+
+.searchBox h2 {
+  margin: 0px;
+}
+
+.contentReadMore .full {
+  display: none;
+}
+
+.contentReadMore .readmore {
+  cursor: pointer;
+}
+
+.mx-like-box {
+  border: 0px !important;
+}
+
+.mx-like-box .mx-like-place {
+  float: right;
+  height: 100%;
+}
+
+.mx-like-box .mx-like-place .mx-like-place-faces {
+  height: 100%;
+  margin-top: 0px;
+}
+
+.mx-like-box .mx-like-place .mx-like-place-faces span {
+  height: 100%;
+  margin-top: 0px;
+  background-position: center;
+}
+
+.mx-like-box .mx-like-place .mx-like-place-count {
+  height: 100%;
+}
+
+.slideout-mini.grimlock--navigation-fixed-left .slideout-wrapper .site-branding,
+.slideout-mini.grimlock--navigation-fixed-right
+  .slideout-wrapper
+  .site-branding {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.bpmts-activity-report-button {
+  display: none;
+}
+
+#login #nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .slideout-mini.grimlock--navigation-fixed-left .hamburger-navbar,
+  .slideout-mini.grimlock--navigation-fixed-left .site-preheader,
+  .slideout-mini-hover.grimlock--navigation-fixed-left .hamburger-navbar,
+  .slideout-mini-hover.grimlock--navigation-fixed-left .site-preheader {
+    margin-left: 216px !important;
+  }
+}
+
+.hash_tag {
+  color: #2f74c0 !important;
+  font-weight: bolder;
+}
+
+.activity-comments ul li ul li {
+  padding-left: 30px;
+}
+
+.upw-posts .entry-title {
+  font-size: 17px;
+}
+
+.upw-posts .entry-meta {
+  margin-bottom: 0px !important;
+  font-size: 13px !important;
+}
+
+.widget_ultimate_posts h2 {
+  color: #2f74c0 !important;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIiwibG9naW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFpR0EsT0FBTyxDQUFQLHNFQUFPO0FBQ1AsT0FBTyxDQUFQLCtFQUFPO0FBQ1AsT0FBTyxDQUFQLHNFQUFPO0FDbkdQLEFBQ0ksSUFEQSxBQUNDLE1BQU0sQ0FBQSxFQUNILGdCQUFnQixFQUFDLDRCQUE0QixHQUNoRDs7QURGTCxBQUFBLGVBQWUsQ0FBQSxFQUNYLE1BQU0sRUFBRSxPQUFPLEdBUWxCOztBQVRELEFBSVksZUFKRyxDQUVYLFFBQVEsQ0FDSixDQUFDLEFBQ0ksV0FBVyxDQUFBLEVBQ1IsYUFBYSxFQUFFLEdBQUcsR0FDckI7O0FBSWIsQUFDSSxpQkFEYSxDQUNiLHVCQUF1QixDQUFBLEVBQ25CLEtBQUssRUFBQyxJQUFJLEdBQ2I7O0FBRUwsQUFBQSx3QkFBd0IsQ0FBQSxFQUNwQixVQUFVLEVBQUMsSUFBSSxHQUNsQjs7QUFDRCxBQUFBLGVBQWUsQ0FBQSxFQUNYLE9BQU8sRUFBRSxLQUFLLEVBQ2QsU0FBUyxFQUFFLElBQUksRUFDZixXQUFXLEVBQUUsR0FBRyxFQUNoQixXQUFXLEVBQUUsQ0FBQyxFQUNkLE1BQU0sRUFBRSxPQUFPLEVBQ2YsT0FBTyxFQUFFLENBQUMsRUFDVixjQUFjLEVBQUUsU0FBUyxHQUM1Qjs7QUFDRCxBQUNJLHNDQURrQyxDQUNsQyx3QkFBd0IsQ0FBQSxFQUNwQixPQUFPLEVBQUUsSUFBSSxHQUloQjs7QUFOTCxBQUdRLHNDQUg4QixDQUNsQyx3QkFBd0IsQUFFbkIsOEJBQThCLENBQUEsRUFDM0IsT0FBTyxFQUFFLEtBQUssR0FDakI7O0FBSVQsQUFHWSx3QkFIWSxDQUNwQixFQUFFLENBQ0UsRUFBRSxBQUNHLGFBQWEsQ0FBQSxFQUlWLE1BQU0sRUFBRSxLQUFLLEdBVWhCOztBQWpCYixBQUlnQix3QkFKUSxDQUNwQixFQUFFLENBQ0UsRUFBRSxBQUNHLGFBQWEsQUFDVCxRQUFRLENB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 */
+
+/*# sourceMappingURL=style.css.map */
+
+.main-navigation.navbar--container-fluid .navbar > .navbar__container {
+  flex-wrap: nowrap !important;
+}
+
+.item-activity {
+  display: none !important;
+}
