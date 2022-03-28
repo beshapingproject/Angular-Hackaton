@@ -1,6 +1,6 @@
 import {
-  JsonFAQ2Interface,
-  JsonFAQ3Interface,
+  DetailsInterface,
+  DescriptionsInterface,
   JsonFAQInterface,
 } from '../interfaces/json';
 
@@ -8,38 +8,33 @@ export class JsonFAQ implements JsonFAQInterface {
   id: number;
   img: string;
   title: string;
-  JsonFAQ2: Array<JsonFAQ2>;
-  constructor(
-    id: number,
-    img: string,
-    title: string,
-    JsonFAQ2: Array<JsonFAQ2>
-  ) {
+  details: Array<Details>;
+  constructor(id: number, img: string, title: string, details: Array<Details>) {
     this.id = id;
     this.img = img;
     this.title = title;
-    this.JsonFAQ2 = JsonFAQ2;
+    this.details = details;
   }
 }
 
-export class JsonFAQ2 implements JsonFAQ2Interface {
+export class Details implements DetailsInterface {
   id: number;
   img: string;
   title: string;
-  JsonFAQ3: Array<JsonFAQ3>;
+  descriptions: Array<Descriptions>;
   constructor(
     id: number,
     img: string,
     title: string,
-    JsonFAQ3: Array<JsonFAQ3>
+    descriptions: Array<Descriptions>
   ) {
     this.id = id;
     this.img = img;
     this.title = title;
-    this.JsonFAQ3 = JsonFAQ3;
+    this.descriptions = descriptions;
   }
 }
-export class JsonFAQ3 implements JsonFAQ3Interface {
+export class Descriptions implements DescriptionsInterface {
   id: number;
   img: string;
   title: string;

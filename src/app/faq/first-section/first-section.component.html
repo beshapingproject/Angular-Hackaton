@@ -2,63 +2,14 @@
     <h2 class="accordion-header" id="heading{{faq.id}}">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             attr.data-bs-target="#collapse{{faq.id}}" aria-expanded="false" attr.aria-controls="collapse{{faq.id}}">
-            <img src="../../assets/img/icon/pellegrini.webp" class="accordion-img-title" alt="" srcset="">
+            <img src="{{faq.img}}" class="accordion-img-title" alt="" srcset="">
             {{faq.title}}
         </button>
     </h2>
     <div id="collapse{{faq.id}}" class="accordion-collapse collapse" attr.aria-labelledby="heading{{faq.id}}"
         data-bs-parent="#accordionExample">
         <div class="accordion-body">
-            <!-- Accordion 2 -->
-            <div class="accordion accordion-flush" id="accordionExample2">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><img
-                                src="../../assets/img/icon/pellegrini.webp" class="accordion-img-title" alt=""
-                                srcset="">
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                        data-bs-parent="#accordionExample2">
-                        <div class="accordion-body">
-                            <!-- Accordion 3 -->
-                            <div class="accordion accordion-flush" id="accordionExample3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="heading3">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
-                                            aria-controls="collapse3"><img src="../../assets/img/icon/pellegrini.webp"
-                                                class="accordion-img-title" alt="" srcset="">
-                                            FAQ - Accordion Item #1
-                                        </button>
-                                    </h2>
-                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                                        data-bs-parent="#accordionExample3">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion
-                                                body.</strong> It is shown by default, until
-                                            the collapse
-                                            plugin adds the appropriate classes that we use
-                                            to style each element. These classes control the
-                                            overall
-                                            appearance, as well as the showing and hiding
-                                            via CSS transitions. You can modify any of this
-                                            with
-                                            custom CSS or overriding our default variables.
-                                            It's also worth noting that just about any HTML
-                                            can go
-                                            within the <code>.accordion-body</code>, though
-                                            the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <app-details [detail]="details" *ngFor="let details of faq.details"></app-details>
         </div>
     </div>
 </div>

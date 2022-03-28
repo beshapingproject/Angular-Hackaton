@@ -1,0 +1,21 @@
+/* Language: js */
+/* Path: src\app\faq\first-section\first-section.component.js */
+.card_title {
+  margin-top: 10px;
+}
+
+.img-title {
+  margin-bottom: 5px !important;
+  padding-right: 10px !important;
+}
+
+.accordion-img-title {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.accordion-button[aria-expanded="true"] {
+  color: #48465b;
+  background-color: rgba(0, 0, 0, 0.03);
+}

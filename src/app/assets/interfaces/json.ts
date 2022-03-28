@@ -2,16 +2,16 @@ export interface JsonFAQInterface {
   id: number;
   img: string;
   title: string;
-  JsonFAQ2: Array<JsonFAQ2Interface>;
+  details: Array<DetailsInterface>;
 }
 
-export interface JsonFAQ2Interface {
+export interface DetailsInterface {
   id: number;
   img: string;
   title: string;
-  JsonFAQ3: Array<JsonFAQ3Interface>;
+  descriptions: Array<DescriptionsInterface>;
 }
-export interface JsonFAQ3Interface {
+export interface DescriptionsInterface {
   id: number;
   img: string;
   title: string;

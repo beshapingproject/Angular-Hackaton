@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FaqComponent } from './faq/faq.component';
 import { FirstSectionComponent } from './faq/first-section/first-section.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DetailsComponent } from './faq/first-section/details/details.component';
+import { QuestionsComponent } from './faq/first-section/details/questions/questions.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FaqComponent,
     FirstSectionComponent,
+    DetailsComponent,
+    QuestionsComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],

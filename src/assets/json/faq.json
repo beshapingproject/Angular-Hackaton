@@ -1,7 +1,7 @@
 [
     {
         "id": "SistemaOne",
-        "img": "",
+        "img": "../../assets/img/icon/pellegrini.webp",
         "title": "SISTEMA WELFARE E SERVIZI ASSOCIATI",
         "details": [
             {
@@ -12,13 +12,13 @@
                     {
                         "id": "BudgetDescriptionOne",
                         "img": "",
-                        "title": "Qual è la differenza tra i servizi a rimborso e quelli a erogazione diretta?",
+                        "title": "FAQ - Qual è la differenza tra i servizi a rimborso e quelli a erogazione diretta?",
                         "description": "I servizi a rimborso sono quei servizi previsti dalla normativa per i quali attraverso il portale Welfare Pellegrini puoi presentare una richiesta di rimborso per una spesa che hai già sostenuto, esibendo i sgiustificativi e la documentazione necessaria indicata in piattaforma"
                     },
 					{
                         "id": "BudgetDescriptionTwo",
                         "img": "",
-                        "title": "Posso chiedere il rimborso per spese sostenute per un mio familiare?",
+                        "title": "FAQ - Posso chiedere il rimborso per spese sostenute per un mio familiare?",
                         "description": "Per iservizi Scuola e Istruzione, Assistenza Domiciliare e Babysitting potrai richiedere il rimborso solo per le spese da te sostenute per i tuoi familiari anche se non fiscalmente a tuo carico. I familiari sono definiti come segue: o il coniuge non legalmente ed effettivamente separato, anche da unione civile, o i figli legittimi o legittimati o naturali o adottivi o affidati, o i genitori naturali o gli adottanti, o i generi e le nuore, o il suocero e la suocera, o i fratelli e le sorelle germani o unilaterali"
                     }
 					

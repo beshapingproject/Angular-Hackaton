@@ -18,6 +18,7 @@ export class FaqComponent implements OnInit {
   loadJson() {
     this.jsonService.getFAQ().subscribe((data) => {
       this.faqs = <JsonFAQ[]>data;
+      console.log(this.faqs);
     });
   }
 }
