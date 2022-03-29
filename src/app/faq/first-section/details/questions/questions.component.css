@@ -12,7 +12,7 @@
 .accordion-img-title {
   width: 100px;
   height: 50px;
-  object-fit: cover;
+  /*object-fit: cover;*/
 }
 
 .accordion-button[aria-expanded="true"] {

@@ -70,3 +70,24 @@
     margin-left: -275px !important;
   }
 }
+
+.elementor-button {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #48465b;
+  border-radius: 5px !important;
+}
+.elementor-button:hover {
+  background-color: #48465b;
+  border-color: #f5f5f5;
+  color: #f5f5f5;
+  border-radius: 10px !important;
+}
+.inline {
+  display: inline !important;
+}
+
+.elementor-button-wrapper {
+  position: absolute;
+  right: 10px;
+}

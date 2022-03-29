@@ -1,47 +1,105 @@
 [
     {
-        "id": "SistemaOne",
-        "img": "../../assets/img/icon/pellegrini.webp",
-        "title": "SISTEMA WELFARE E SERVIZI ASSOCIATI",
-        "details": [
+        "id":"SistemaOne",
+        "img":"../../assets/img/icon/pellegrini.webp",
+        "title":"SISTEMA WELFARE E SERVIZI ASSOCIATI",
+        "details":[
             {
-                "id": "BudgetOne",
-                "img": "",
-                "title": "BUDGET WELFARE",
-                "descriptions": [
+                "id":"BudgetOne",
+                "img":"../../assets/img/icon/budget.png",
+                "title":"BUDGET WELFARE",
+                "descriptions":[
                     {
-                        "id": "BudgetDescriptionOne",
-                        "img": "",
-                        "title": "FAQ - Qual è la differenza tra i servizi a rimborso e quelli a erogazione diretta?",
-                        "description": "I servizi a rimborso sono quei servizi previsti dalla normativa per i quali attraverso il portale Welfare Pellegrini puoi presentare una richiesta di rimborso per una spesa che hai già sostenuto, esibendo i sgiustificativi e la documentazione necessaria indicata in piattaforma"
+                       "id":"BudgetDescriptionOne",
+                       "img":"<i class='fa-solid fa-clipboard'></i>",
+                       "title":"FAQ - Qual è la differenza tra i servizi a rimborso e quelli a erogazione diretta?",
+                       "description":"I servizi a rimborso sono quei servizi previsti dalla normativa per i quali attraverso il portale Welfare Pellegrini puoi presentare una richiesta di rimborso per una spesa che hai già sostenuto, esibendo i sgiustificativi e la documentazione necessaria indicata in piattaforma."
                     },
-					{
-                        "id": "BudgetDescriptionTwo",
-                        "img": "",
-                        "title": "FAQ - Posso chiedere il rimborso per spese sostenute per un mio familiare?",
-                        "description": "Per iservizi Scuola e Istruzione, Assistenza Domiciliare e Babysitting potrai richiedere il rimborso solo per le spese da te sostenute per i tuoi familiari anche se non fiscalmente a tuo carico. I familiari sono definiti come segue: o il coniuge non legalmente ed effettivamente separato, anche da unione civile, o i figli legittimi o legittimati o naturali o adottivi o affidati, o i genitori naturali o gli adottanti, o i generi e le nuore, o il suocero e la suocera, o i fratelli e le sorelle germani o unilaterali"
+                    {
+                       "id":"BudgetDescriptionTwo",
+                       "img":"<i class='fa-solid fa-clipboard'></i>",
+                       "title":"FAQ - Posso chiedere il rimborso per spese sostenute per un mio familiare?",
+                       "description":"Per iservizi Scuola e Istruzione, Assistenza Domiciliare e Babysitting potrai richiedere il rimborso solo per le spese da te sostenute per i tuoi familiari anche se non fiscalmente a tuo carico. I familiari sono definiti come segue: <br>&bull; il coniuge non legalmente ed effettivamente separato, anche da unione civile, <br>&bull; i figli legittimi o legittimati o naturali o adottivi o affidati, <br>&bull; i genitori naturali o gli adottanti, <br>&bull; i generi e le nuore, <br>&bull; il suocero e la suocera, <br>&bull; i fratelli e le sorelle germani <br>&bull; unilaterali"
                     }
-					
                 ]
             },
             {
-                "id": "BuoniOne",
-                "img": "",
-                "title": "BUONI PASTO",
-                "descriptions": []
+                "id":"BuoniOne",
+                "img":"../../assets/img/icon/ticket.png",
+                "title":"BUONI PASTO",
+                "descriptions":[
+                    {
+                        "id":"CardOne",
+                        "img":"<i class='fa-solid fa-clipboard'></i>",
+                        "title":"Come attivare la Card?",
+                        "description": "Per poter essere utilizzata presso gli esercizi convenzionati, la Card dovrà essere attivata seguendo le istruzioni contenute nella busta chiusa. La gestione dei tickets avviene a consuntivo: a fine mese si riceve il numero dei ticket dei giorni effettivi-lavorati nel mese precedente."
+                    }
+                ]
             }
         ]
     },
     {
-        "id": "RepositoryOne",
-        "img": "",
-        "title": "REPOSITORY DOCUMENTALE AZIENDALE",
-        "details": []
+        "id":"RepositoryOne",
+        "img":"../../assets/img/icon/svg/strumenti_aziendali.svg",
+        "title":"DOTAZIONI AZIENDALI",
+        "details":[
+            {
+                "id":"PcOne",
+                "img":"../../assets/img/icon/svg/pc.svg",
+                "title":"PC AZIENDALE",
+                "descriptions":[
+                    {
+                        "id":"PcAzOne",
+                        "img":"<i class='fa-solid fa-clipboard'></i>",
+                        "title":"Come risolvere eventuali guasti del PC?"
+                    }
+                ]
+            },
+            {
+                "id":"PcTwo",
+                "img":"../../assets/img/icon/svg/smartphone.svg",
+                "title":"SMARTHPONE AZIENDALE",
+                "descriptions":[
+                    {
+                        "id":"SmartPhoneOne",
+                        "img":"<i class='fa-solid fa-clipboard'></i>",
+                        "title":"Cosa fare in caso di smarrimento dello smartphone?"
+                    }
+                ]
+            }
+        ]
     },
-	  {
-          "id": "FondoOne",
-        "img": "",
-        "title": "FONDO METASALUTE",
-        "details": []
+    {
+        "id":"FondoOne",
+        "img":"../../assets/img/icon/metasalute.webp",
+        "title":"FONDO PENSIONE E ASSISTENZA SANITARIA",
+        "details":[
+            {
+                "id":"Metasalute",
+                "img":"../../assets/img/icon/metasalute.webp",
+                "title":"FONDO METASALUTE",
+                "descriptions":[
+                    {
+                        "id":"MetasaluteOne",
+                        "img":"<i class='fa-solid fa-clipboard'></i>",
+                        "title":"Come avviene l'adesione al fondo Metasalute?",
+                        "description":"Per l'assistenza sanitaria, ti informiamo che l'adesione al fondo Metasalute previsto per il contratto metalmeccanico avviene in automatico per ogni dipendente e che il costo è totalmente a carico dell'azienda dal giorno 01.10.2017."
+                    }
+                ]
+            },
+            {
+                "id":"Cometa",
+                "img":"../../assets/img/icon/cometa.png",
+                "title":"FONDO COMETA",
+                "descriptions":[
+                    {
+                        "id":"CometaOne",
+                        "img":"<i class='fa-solid fa-clipboard'></i>",
+                        "title":"Chi può associarsi a Cometa?",
+                        "description":"Tutti i lavoratori dipendenti, assunti: A tempo indeterminato, A tempo determinato, Con contratto di apprendistato in aziende che applicano il CCNL (Dell'industria metalmeccanica e dell'istallazione di impianti, Dell’industria orafa-argentiera), I familiari  fiscalmente a carico dei lavoratori iscritti."
+                    }
+                ]
+            }
+        ]
     }
 ]

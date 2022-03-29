@@ -4,8 +4,8 @@
         <h2 class="accordion-header" id="heading{{question.id}}">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 attr.data-bs-target="#collapse{{question.id}}" aria-expanded="false"
-                attr.aria-controls="collapse{{question.id}}"><img src="{{question.img}}" class="accordion-img-title"
-                    alt="" srcset="">
+                attr.aria-controls="collapse{{question.id}}">
+                <div [innerHtml]="question.img" style="color: slategrey; padding-right: 20px;"></div>
                 {{question.title}}
             </button>
         </h2>
