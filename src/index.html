@@ -1,13 +1,225 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>AngularHackaton</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-title" content="We Digitech Solutions">
+  <meta name="application-name" content="We Digitech Solutions">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+
+  <title>Ticket &#8211; We Digitech Solutions</title>
+  <meta name='robots' content='noindex,nofollow' />
+  <link rel='dns-prefetch' href='//cdn.datatables.net' />
+  <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+  <link rel='dns-prefetch' href='//cdn.rawgit.com' />
+  <link rel='dns-prefetch' href='//s.w.org' />
+  <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+  <link rel="alternate" type="application/rss+xml" title="We Digitech Solutions &raquo; Feed"
+    href="https://wedigitech.be-tse.it/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="We Digitech Solutions &raquo; Comments Feed"
+    href="https://wedigitech.be-tse.it/comments/feed/" />
+  <link rel="alternate" type="text/calendar" title="We Digitech Solutions &raquo; iCal Feed"
+    href="https://wedigitech.be-tse.it/events/?ical=1" />
+
+  <link rel='stylesheet' id='admin-style-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/wedigitech-plugin-jobs/assets/job-posting-style.css?ver=5.6.8'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='Datatablescs-css'
+    href='https://cdn.datatables.net/v/dt/dt-1.10.23/b-1.6.5/b-html5-1.6.5/rg-1.1.2/datatables.min.css?ver=5.6.8'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='tribe-common-skeleton-style-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.11.5.1'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='tribe-tooltip-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.11.5.1'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='wp-block-library-css'
+    href='https://wedigitech.be-tse.it/wp-includes/css/dist/block-library/style.min.css?ver=5.6.8' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='wp-block-library-theme-css'
+    href='https://wedigitech.be-tse.it/wp-includes/css/dist/block-library/theme.min.css?ver=5.6.8' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='bp-member-block-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress/bp-members/css/blocks/member.min.css?ver=8.0.0'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='bp-members-block-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress/bp-members/css/blocks/members.min.css?ver=8.0.0'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='birthday-style-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/bp-birthday-greetings/assets/css/bp-birthday-style.css?ver=5.6.8'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='ggpopover-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-moderation-tools/assets/css/ggpopover.min.css?ver=1.3.1'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='pt-report-abuse-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-moderation-tools/assets/css/report-abuse.css?ver=1.3.1'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='bp-mentions-css-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress/bp-activity/css/mentions.min.css?ver=8.0.0'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='bp-legacy-css-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress/bp-templates/bp-legacy/css/buddypress.min.css?ver=8.0.0'
+    type='text/css' media='screen' />
+  <link rel='stylesheet' id='grimlock-css' href='assets/css/grimlock.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='grimlock-animate-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/grimlock-animate/assets/css/style.css?ver=1.1.7'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='grimlock-buddypress-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/grimlock-buddypress/assets/css/style.css?ver=1.3.19'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='grimlock-echo-knowledge-base-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/grimlock-echo-knowledge-base/assets/css/style.css?ver=1.0.6'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='grimlock-login-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/grimlock-login/assets/css/style.css?ver=1.1.4' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='cera-style-css' href='assets/css/cera.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='cera-be-we-theme-style-css'
+    href='https://wedigitech.be-tse.it/wp-content/themes/be-we-theme/style.css?ver=1.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='cera-be-we-theme-style-dist-css'
+    href='https://wedigitech.be-tse.it/wp-content/themes/be-we-theme/dist/css/style.css?v=1648222127&#038;ver=1.0'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='upw_theme_standard-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/ultimate-posts-widget/css/upw-theme-standard.min.css?ver=5.6.8'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='mxmlb_style-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/mx-like-button/includes/frontend/assets/css/style.css?ver=1.4.2'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-icons-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.10.0'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-animations-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.1.1'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-frontend-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.1.1'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='elementor-post-3650-css'
+    href='https://wedigitech.be-tse.it/wp-content/uploads/elementor/css/post-3650.css?ver=1646988033' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='elementor-global-css'
+    href='https://wedigitech.be-tse.it/wp-content/uploads/elementor/css/global.css?ver=1646988033' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='elementor-post-6485-css'
+    href='https://wedigitech.be-tse.it/wp-content/uploads/elementor/css/post-6485.css?ver=1648113317' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='grimlock-author-avatars-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/grimlock-author-avatars/assets/css/style.css?ver=1.0.9'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='rt-mediaelement-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-media/lib/media-element/mediaelementplayer-legacy.min.css?ver=4.6.6'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='rt-mediaelement-wp-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-media/lib/media-element/wp-mediaelement.min.css?ver=4.6.6'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='rtmedia-main-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-media/app/assets/css/rtmedia.min.css?ver=4.6.6'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='rtmedia-upload-terms-main-css'
+    href='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-media/app/assets/css/rtm-upload-terms.min.css?ver=4.6.6'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='kirki-styles-css' href='https://wedigitech.be-tse.it?action=kirki-styles&#038;ver=3.1.8'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='google-fonts-1-css'
+    href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.6.8'
+    type='text/css' media='all' />
+  <script type='text/javascript' src='https://wedigitech.be-tse.it/wp-includes/js/jquery/jquery.min.js?ver=3.5.1'
+    id='jquery-core-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
+    id='jquery-migrate-js'></script>
+  <script type='text/javascript' src='https://wedigitech.be-tse.it/wp-includes/js/plupload/moxie.min.js?ver=1.3.5'
+    id='moxiejs-js'></script>
+  <script type='text/javascript' src='https://wedigitech.be-tse.it/wp-includes/js/plupload/plupload.min.js?ver=2.1.9'
+    id='plupload-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-moderation-tools/assets/js/ggpopover.js?ver=1.3.1'
+    id='ggpopover-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-moderation-tools/assets/js/jquery-cookie.js?ver=5.6.8'
+    id='jquery-cookie-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/buddypress-moderation-tools/assets/js/report-abuse.js?ver=1.3.1'
+    id='pt-report-abuse-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/buddypress/bp-core/js/confirm.min.js?ver=8.0.0'
+    id='bp-confirm-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js?ver=8.0.0'
+    id='bp-widget-members-js'></script>
+
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/buddypress/bp-templates/bp-legacy/js/buddypress.min.js?ver=8.0.0'
+    id='bp-legacy-js-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/themes/be-we-theme/dist/js/vendors.js?ver=5.6.8'
+    id='be-we-theme-vendor-js-js'></script>
+  <script type='text/javascript' src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js?ver=5.6.8'
+    id='be-we-theme-datatable-bootstrap-js-js'></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js?ver=5.6.8'
+    id='be-we-theme-select2-js'></script>
+  <script type='text/javascript' src='https://cdn.rawgit.com/julmot/mark.js/6.1.0/dist/jquery.mark.min.js?ver=5.6.8'
+    id='be-we-theme-mark-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/themes/be-we-theme/dist/js/script.js?v=1648222127&#038;ver=5.6.8'
+    id='be-we-theme-script-js-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/themes/cera/assets/js/libs/modernizr.js?ver=3.6.0'
+    id='modernizr-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/mx-like-button/includes/frontend/assets/js/script.js?ver=1.4.2'
+    id='mxmlb_script-js'></script>
+  <script type='text/javascript'
+    src='https://wedigitech.be-tse.it/wp-content/plugins/mx-like-button/includes/frontend/assets/js/mx-poput.js?ver=1.4.2'
+    id='mxmlb_popup_script-js'></script>
+  <link rel="https://api.w.org/" href="https://wedigitech.be-tse.it/wp-json/" />
+  <link rel="alternate" type="application/json" href="https://wedigitech.be-tse.it/wp-json/wp/v2/pages/6485" />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wedigitech.be-tse.it/xmlrpc.php?rsd" />
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+    href="https://wedigitech.be-tse.it/wp-includes/wlwmanifest.xml" />
+  <meta name="generator" content="WordPress 5.6.8" />
+  <link rel="canonical" href="https://wedigitech.be-tse.it/coding-race/" />
+  <link rel='shortlink' href='https://wedigitech.be-tse.it/?p=6485' />
+  <link rel="alternate" type="application/json+oembed"
+    href="https://wedigitech.be-tse.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwedigitech.be-tse.it%2Fcoding-race%2F" />
+  <link rel="alternate" type="text/xml+oembed"
+    href="https://wedigitech.be-tse.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwedigitech.be-tse.it%2Fcoding-race%2F&#038;format=xml" />
+
+  <script type="text/javascript">var ajaxurl = 'https://wedigitech.be-tse.it/wp-admin/admin-ajax.php';</script>
+
+  <meta name="tec-api-version" content="v1">
+  <meta name="tec-api-origin" content="https://wedigitech.be-tse.it">
+  <link rel="https://theeventscalendar.com/" href="https://wedigitech.be-tse.it/wp-json/tribe/events/v1/" />
+
+  <link rel="icon" href="https://wedigitech.be-tse.it/wp-content/uploads/2020/04/cropped-favicon-32x32.png"
+    sizes="32x32" />
+  <link rel="icon" href="https://wedigitech.be-tse.it/wp-content/uploads/2020/04/cropped-favicon-192x192.png"
+    sizes="192x192" />
+  <link rel="apple-touch-icon"
+    href="https://wedigitech.be-tse.it/wp-content/uploads/2020/04/cropped-favicon-180x180.png" />
+  <meta name="msapplication-TileImage"
+    content="https://wedigitech.be-tse.it/wp-content/uploads/2020/04/cropped-favicon-270x270.png" />
 </head>
-<body>
+
+<body
+  class="bp-legacy page-template page-template-template-homepage page-template-template-homepage-php page page-id-6485 logged-in wp-embed-responsive tribe-no-js grimlock grimlock--fluid grimlock--navigation-fixed-left grimlock--navigation-inside-top grimlock--navigation-fixed grimlock--back-to-top-right grimlock--back-to-top-displayed grimlock--loader-fadein-displayed grimlock--page grimlock-buddypress--members-counts-displayed grimlock-buddypress--friend-icons-heart mobile elementor-default elementor-kit-3650 elementor-page elementor-page-6485 no-js">
   <app-root></app-root>
 </body>
+
 </html>

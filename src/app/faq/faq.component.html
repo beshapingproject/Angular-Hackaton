@@ -1,0 +1,42 @@
+<div id="content" style="margin-left: 275px;" tabindex="-1">
+    <div id="primary">
+        <main id="main" class="site-main">
+            <section style="padding: 30px 30px;">
+                <div class="card">
+                    <!-- Card title-->
+                    <div class="card-header">
+                        <h3 class="card_title inline"><img src="../../assets/img/icon/svg/help.svg" class="img-title"
+                                alt="" srcset="">
+                            Frequently Asked Questions</h3>
+                        <div class="elementor-button-wrapper inline">
+                            <button
+                                class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Apri Nuovo Ticket</span>
+                                </span>
+                            </button>
+                            <a href="mailto:codingrace@be-tse.it"
+                                class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Storico Ticket</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card content-->
+                    <div class="card-body">
+                        <div class="col-md-6">
+                            <div class="form col-md-6"> <i class="fa fa-search"></i> <input type="text"
+                                    class="form-control form-input" placeholder="Search anything...">
+                            </div>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <!-- First Accordion -->
+                            <app-first-section [faq]="section" *ngFor="let section of faqs"></app-first-section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>

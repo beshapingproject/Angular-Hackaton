@@ -1,0 +1,42 @@
+<!-- Accordion 2 -->
+<div class="accordion accordion-flush" id="accordionExample2">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{detail.id}}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                attr.data-bs-target="#collapse{{detail.id}}" aria-expanded="false"
+                attr.aria-controls="collapse{{detail.id}}"><img src="{{detail.img}}" class="accordion-img-title" alt=""
+                    srcset="">
+                {{detail.title}}
+            </button>
+        </h2>
+        <div id="collapse{{detail.id}}" class="accordion-collapse collapse" attr.aria-labelledby="heading{{detail.id}}"
+            data-bs-parent="#accordionExample2">
+            <div class="accordion-body">
+                <app-questions [question]="questions" *ngFor="let questions of detail.descriptions"></app-questions>
+            </div>
+            <div class="accordion-footer text-center">
+                <h5 class="accordion-header text-center fw-bolder" style="padding-bottom: 10px;">Abbiamo risolto i tuoi
+                    dubbi?</h5>
+                <div class="elementor-button-wrapper">
+                    <button data-bs-toggle="collapse" attr.data-bs-target="#collapse{{detail.id}}"
+                        style="margin-right: 30px;" class="elementor-button-link elementor-button elementor-size-sm"
+                        role="button">
+                        <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-icon elementor-align-icon-left">
+                                <i class="fa-solid fa-circle-check"></i> </span>
+                            <span class="elementor-button-text">Si, ho ricevuto la risposta.</span>
+                        </span>
+                    </button>
+                    <button href="mailto:codingrace@be-tse.it"
+                        class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                        <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-icon elementor-align-icon-left">
+                                <i class="far fa-envelope"></i> </span>
+                            <span class="elementor-button-text">No, voglio contattare l'assistenza.</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

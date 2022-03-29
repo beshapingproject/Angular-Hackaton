@@ -1,0 +1,15 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="heading{{faq.id}}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            attr.data-bs-target="#collapse{{faq.id}}" aria-expanded="false" attr.aria-controls="collapse{{faq.id}}">
+            <img src="{{faq.img}}" class="accordion-img-title" alt="" srcset="">
+            {{faq.title}}
+        </button>
+    </h2>
+    <div id="collapse{{faq.id}}" class="accordion-collapse collapse" attr.aria-labelledby="heading{{faq.id}}"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <app-details [detail]="details" *ngFor="let details of faq.details"></app-details>
+        </div>
+    </div>
+</div>

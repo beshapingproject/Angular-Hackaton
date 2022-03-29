@@ -1,7 +1,9 @@
 @import "https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css";
 @import "https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css";
 @import "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css";
-
+body.login {
+  background-image: url("../../assets/images/login-back.jpg");
+}
 
 #navbar-toggler-mini {
   display: none !important;
@@ -1243,4 +1245,3 @@ input.form-control.form-input {
 .item-activity {
   display: none !important;
 }
-
