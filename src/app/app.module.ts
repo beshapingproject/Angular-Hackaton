@@ -12,6 +12,7 @@ import { QuestionsComponent } from './pages/faq/first-section/details/questions/
 import { PagesComponent } from './pages/pages.component';
 import { OpenTicketComponent } from './pages/open-ticket/open-ticket.component';
 import { FormsModule } from '@angular/forms';
+import { HistoryTicketComponent } from './pages/history-ticket/history-ticket.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     QuestionsComponent,
     PagesComponent,
     OpenTicketComponent,
+    HistoryTicketComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [],
