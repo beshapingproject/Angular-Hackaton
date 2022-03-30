@@ -9,8 +9,8 @@
                                 alt="" srcset="">
                             Open New Ticket</h3>
                         <div class="elementor-button-wrapper inline">
-                            <a href="mailto:codingrace@be-tse.it"
-                                class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                            <a (click)="goToHistory()" class="elementor-button-link elementor-button elementor-size-sm"
+                                role="button">
                                 <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-text">Storico Ticket</span>
                                 </span>
@@ -36,7 +36,7 @@
                             <div *ngIf="subCategory != ''" class="mb-3">
                                 <label for="sottoargomento" class="form-label">Sottoargomento</label>
                                 <input type="text" class="form-control" id="sottoargomento" value="{{subCategory}}"
-                                    placeholder="{{subCategory}}" [(ngModel)]="ticket.subject" name="subject"
+                                    placeholder="{{subCategory}}" [(ngModel)]="ticket.subCategory" name="subject"
                                     aria-describedby="sottoargomento" readonly>
                                 <div id="sottoargomento" class="form-text">Sottoargomento Selezionato
                                 </div>

@@ -1,1 +1,83 @@
-<p>history-ticket works!</p>
+<div id="content" style="margin-left: 275px;" tabindex="-1">
+    <div id="primary">
+        <main id="main" class="site-main">
+            <section style="padding: 30px 30px;">
+                <div class="card">
+                    <!-- Card title-->
+                    <div class="card-header">
+                        <h3 class="card_title inline"><img src="../../assets/img/icon/svg/help.svg" class="img-title"
+                                alt="" srcset="">
+                            Sezione Ticket</h3>
+                        <div class="elementor-button-wrapper inline">
+                            <a (click)="goToDashboard()"
+                                class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Torna a FAQ</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card content-->
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Data Apertura</th>
+                                    <th scope="col">Data Modifica</th>
+                                    <th scope="col">Argomento</th>
+                                    <th scope="col">Oggetto</th>
+                                    <th scope="col" style="width: 150px;">Stato</th>
+                                    <th scope="col" style="width: 150px">Opzioni</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="align-middle" scope="row">2022-01-01</th>
+                                    <td class="align-middle">2022-01-02</td>
+                                    <td class="align-middle">Argomento di test</td>
+                                    <td class="align-middle">Oggetto di test</td>
+                                    <td class="text-center"><a class="btn btn-primary btn-sm text-white"
+                                            style="width: 150px;">
+                                            NEW</a>
+                                    </td>
+                                    <td class="text-center"><button type="button"
+                                            class="btn btn-light btn-sm text-dark"><i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                            Visualizza</button></td>
+                                </tr>
+                                <tr>
+                                    <th class="align-middle" scope="row">2022-01-01</th>
+                                    <td class="align-middle">2022-01-02</td>
+                                    <td class="align-middle">Argomento di test</td>
+                                    <td class="align-middle">Oggetto di test</td>
+                                    <td class="text-center"><a class="btn btn-warning btn-sm text-white"
+                                            style="width: 150px;">
+                                            IN PROGRESS</a>
+                                    </td>
+                                    <td class="text-center"><button type="button"
+                                            class="btn btn-light btn-sm text-dark"><i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                            Visualizza</button></td>
+                                </tr>
+                                <tr>
+                                    <th class="align-middle" scope="row">2022-01-01</th>
+                                    <td class="align-middle">2022-01-02</td>
+                                    <td class="align-middle">Argomento di test</td>
+                                    <td class="align-middle">Oggetto di test</td>
+                                    <td class="text-center"><a class="btn btn-success btn-sm text-white"
+                                            style="width: 150px;">
+                                            COMPLETED</a>
+                                    </td>
+                                    <td class="text-center"><button type="button"
+                                            class="btn btn-light btn-sm text-dark"><i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                            Visualizza</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
