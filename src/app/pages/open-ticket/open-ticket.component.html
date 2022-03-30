@@ -1,0 +1,80 @@
+<div id="content" style="margin-left: 275px;" tabindex="-1">
+    <div id="primary">
+        <main id="main" class="site-main">
+            <section style="padding: 30px 30px;">
+                <div class="card">
+                    <!-- Card title-->
+                    <div class="card-header">
+                        <h3 class="card_title inline"><img src="../../assets/img/icon/svg/help.svg" class="img-title"
+                                alt="" srcset="">
+                            Open New Ticket</h3>
+                        <div class="elementor-button-wrapper inline">
+                            <a href="mailto:codingrace@be-tse.it"
+                                class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Storico Ticket</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card content-->
+                    <div class="card-body">
+                        <form #f="ngForm" type="submit">
+                            <div *ngIf="subCategory == ''" class="mb-3">
+                                <label class="form-label">Sottoargomento</label>
+                                <select [(ngModel)]="ticket.subCategory" name="subCategory" class="form-select"
+                                    aria-label="Seleziona Argomento" aria-describedby="sottoargomentoHelp">
+                                    <option selected>Seleziona
+                                        Argomento</option>
+                                    <option *ngFor="let subArgoment of subArgoments" value="{{subArgoment}}" required>
+                                        {{subArgoment}}
+                                    </option>
+                                </select>
+                                <div id="sottoargomentoHelp" class="form-text">Seleziona Argomento del Ticket
+                                </div>
+                            </div>
+                            <div *ngIf="subCategory != ''" class="mb-3">
+                                <label for="sottoargomento" class="form-label">Sottoargomento</label>
+                                <input type="text" class="form-control" id="sottoargomento" value="{{subCategory}}"
+                                    placeholder="{{subCategory}}" [(ngModel)]="ticket.subject" name="subject"
+                                    aria-describedby="sottoargomento" readonly>
+                                <div id="sottoargomento" class="form-text">Sottoargomento Selezionato
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="oggetto" class="form-label">Oggetto</label>
+                                <input type="text" class="form-control" id="oggetto" [(ngModel)]="ticket.subject"
+                                    name="subject" aria-describedby="oggettoHelp" required>
+                                <div id="oggettoHelp" class="form-text">Inserire Oggetto del Ticket
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Descrizione</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"
+                                    [(ngModel)]="ticket.content" name="content" required></textarea>
+                                <div id="oggettoHelp" class="form-text">Inserire Descrizione del Problema
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Carica file (Ammessi pdf, jpeg, png, gif, zip,
+                                    doc, docx, xls, xlsx) max 32 MB</label>
+                                <input (change)="selectFile($event)" name="file" class="form-control" type="file"
+                                    id="formFile" accept=".pdf, .jpeg, .png, .gif, .zip, .doc, .docx, .xls, .xlsx">
+                            </div>
+                            <div *ngIf="currentFile" class="progress my-3">
+                                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                                    attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+                                    [ngStyle]="{ width: progress + '%' }">
+                                    {{ progress }}%
+                                </div>
+                            </div>
+
+                            <button [disabled]="f.invalid" type="submit" class="btn btn-primary"
+                                style="width:  150px !important;" (click)="openTicket()">Invia</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
