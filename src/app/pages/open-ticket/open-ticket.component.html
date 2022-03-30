@@ -20,10 +20,10 @@
                     <!-- Card content-->
                     <div class="card-body">
                         <form #f="ngForm" type="submit">
-                            <div class="mb-3">
+                            <div *ngIf="subCategory == ''" class="mb-3">
                                 <label class="form-label">Sottoargomento</label>
-                                <select class="form-select" aria-label="Seleziona Argomento"
-                                    aria-describedby="sottoargomentoHelp">
+                                <select [(ngModel)]="ticket.subCategory" name="subCategory" class="form-select"
+                                    aria-label="Seleziona Argomento" aria-describedby="sottoargomentoHelp">
                                     <option selected>Seleziona
                                         Argomento</option>
                                     <option *ngFor="let subArgoment of subArgoments" value="{{subArgoment}}" required>
@@ -31,6 +31,14 @@
                                     </option>
                                 </select>
                                 <div id="sottoargomentoHelp" class="form-text">Seleziona Argomento del Ticket
+                                </div>
+                            </div>
+                            <div *ngIf="subCategory != ''" class="mb-3">
+                                <label for="sottoargomento" class="form-label">Sottoargomento</label>
+                                <input type="text" class="form-control" id="sottoargomento" value="{{subCategory}}"
+                                    placeholder="{{subCategory}}" [(ngModel)]="ticket.subject" name="subject"
+                                    aria-describedby="sottoargomento" readonly>
+                                <div id="sottoargomento" class="form-text">Sottoargomento Selezionato
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -50,8 +58,17 @@
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Carica file (Ammessi pdf, jpeg, png, gif, zip,
                                     doc, docx, xls, xlsx) max 32 MB</label>
-                                <input class="form-control" type="file" id="formFile">
+                                <input (change)="selectFile($event)" name="file" class="form-control" type="file"
+                                    id="formFile" accept=".pdf, .jpeg, .png, .gif, .zip, .doc, .docx, .xls, .xlsx">
                             </div>
+                            <div *ngIf="currentFile" class="progress my-3">
+                                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                                    attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+                                    [ngStyle]="{ width: progress + '%' }">
+                                    {{ progress }}%
+                                </div>
+                            </div>
+
                             <button [disabled]="f.invalid" type="submit" class="btn btn-primary"
                                 style="width:  150px !important;" (click)="openTicket()">Invia</button>
                         </form>

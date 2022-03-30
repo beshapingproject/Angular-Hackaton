@@ -1,4 +1,4 @@
-import { TicketInterface } from '../interfaces/ticket';
+import {  TicketInterface } from '../interfaces/ticket';
 
 export class Ticket implements TicketInterface {
   id: number;
