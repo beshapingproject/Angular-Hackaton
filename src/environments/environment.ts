@@ -6,8 +6,8 @@ export const environment = {
   production: false,
   apiTicketAdd: 'api/ticket/add/',
   apiTicketList: 'api/ticket/list/',
+  apiTicketDetails: 'api/ticket/detail/',
   apiAttachmentUpload: 'api/attachment/upload/',
-  apiAttachmentOk: 'api/attachment/test/',
 };
 
 /*

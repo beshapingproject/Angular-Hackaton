@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TicketResponse } from 'src/app/assets/classes/ticket';
 
 @Component({
@@ -9,7 +10,7 @@ import { TicketResponse } from 'src/app/assets/classes/ticket';
 export class HistoryTableRowComponent implements OnInit {
   status: string = 'btn-primary';
   @Input() ticket!: TicketResponse;
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     if (this.ticket.status === 'CLOSED') {
@@ -19,5 +20,9 @@ export class HistoryTableRowComponent implements OnInit {
     } else {
       this.status = 'btn-primary';
     }
+  }
+
+  details() {
+    this.router.navigate(['/pages/ticket/details', this.ticket.id]);
   }
 }

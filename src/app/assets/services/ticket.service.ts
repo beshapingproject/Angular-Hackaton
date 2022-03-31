@@ -34,6 +34,15 @@ export class TicketService {
       .pipe(catchError(this.handleError));
   }
 
+  getTicketDetails(id: number) {
+    const headers = { 'content-type': 'application/json' };
+    return this.http
+      .get<TicketResponse>(environment.apiTicketDetails + 1 + '/' + id, {
+        headers: headers,
+      })
+      .pipe(catchError(this.handleError));
+  }
+
   private handleError(error: HttpErrorResponse) {
     const ENTITY_NOT_FOUND = 'ENTITY_NOT_FOUND';
     switch (error.error.type) {
