@@ -13,6 +13,8 @@ import { PagesComponent } from './pages/pages.component';
 import { OpenTicketComponent } from './pages/open-ticket/open-ticket.component';
 import { FormsModule } from '@angular/forms';
 import { HistoryTicketComponent } from './pages/history-ticket/history-ticket.component';
+import { HistoryTableComponent } from './pages/history-ticket/history-table/history-table.component';
+import { HistoryTableRowComponent } from './pages/history-ticket/history-table/history-table-row/history-table-row.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { HistoryTicketComponent } from './pages/history-ticket/history-ticket.co
     PagesComponent,
     OpenTicketComponent,
     HistoryTicketComponent,
+    HistoryTableComponent,
+    HistoryTableRowComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [],

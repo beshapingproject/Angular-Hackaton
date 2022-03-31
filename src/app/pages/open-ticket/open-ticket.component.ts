@@ -101,6 +101,9 @@ export class OpenTicketComponent implements OnInit {
   }
 
   createTicket() {
+    if (this.subCategory != '') {
+      this.ticket.subCategory = this.subCategory;
+    }
     if (this.ticket.subCategory != '') {
       this.ticketService.saveNewTicket(this.ticket).subscribe();
     }

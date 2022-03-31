@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col" style="width: 150px;">Data Apertura</th>
+            <th scope="col" style="width: 150px;">Data Modifica</th>
+            <th scope="col">Argomento</th>
+            <th scope="col">Oggetto</th>
+            <th scope="col" style="width: 150px;">Stato</th>
+            <th scope="col" style="width: 150px">Opzioni</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="ticketList.length > 0">
+        <tr app-history-table-row [ticket]="ticket" *ngFor="let ticket of ticketList"></tr>
+    </tbody>
+    <tbody *ngIf="ticketList.length == 0">
+        <tr>
+            <td colspan="6" class="text-center" style="padding-top: 40px; padding-bottom: 40px;">
+                <h5>Nessun ticket trovato</h5>
+            </td>
+        </tr>
+    </tbody>
+</table>

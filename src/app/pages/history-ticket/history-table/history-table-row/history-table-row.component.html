@@ -1,0 +1,10 @@
+<th class="align-middle">{{ticket.created | date}}</th>
+<td class="align-middle">{{ticket.updated | date}}</td>
+<td class="align-middle" scope="row">{{ticket.subCategory}}</td>
+<td class="align-middle">{{ticket.subject}}</td>
+<td class="text-center"><a class="btn {{status}} btn-sm text-white" style="width: 150px;">
+                {{ticket.status}}</a>
+</td>
+<td class="text-center"><button type="button" class="btn btn-light btn-sm text-dark"><i
+                        class="fa-solid fa-magnifying-glass"></i>
+                Visualizza</button></td>
