@@ -15,6 +15,11 @@ export class FaqComponent implements OnInit {
   ngOnInit(): void {
     this.loadJson();
   }
+
+  goToHistory() {
+    this.router.navigate(['/pages/ticket/history']);
+  }
+  
   loadJson() {
     this.jsonService.getFAQ().subscribe((data) => {
       this.faqs = <JsonFAQ[]>data;

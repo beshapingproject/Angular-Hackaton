@@ -1,0 +1,28 @@
+<div id="content" style="margin-left: 275px;" tabindex="-1">
+    <div id="primary">
+        <main id="main" class="site-main">
+            <section style="padding: 30px 30px;">
+                <div class="card">
+                    <!-- Card title-->
+                    <div class="card-header">
+                        <h3 class="card_title inline"><img src="../../assets/img/icon/svg/help.svg" class="img-title"
+                                alt="" srcset="">
+                            Sezione Ticket</h3>
+                        <div class="elementor-button-wrapper inline">
+                            <a (click)="goToDashboard()"
+                                class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Torna a FAQ</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card content-->
+                    <div class="card-body">
+                        <app-history-table [ticketList]="ticketList"></app-history-table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>

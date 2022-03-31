@@ -39,6 +39,14 @@ export class OpenTicketComponent implements OnInit {
     private ticketService: TicketService
   ) {}
 
+  goToHistory() {
+    this.router.navigate(['/pages/ticket/history']);
+  }
+
+  goToDashboard() {
+    this.router.navigate(['/pages/ticket']);
+  }
+
   ngOnInit(): void {
     let subCategoryLocal = localStorage.getItem('subCategory');
     if (subCategoryLocal != null) {
@@ -78,11 +86,11 @@ export class OpenTicketComponent implements OnInit {
             title: 'Ticket Inviato!',
             text: '',
             icon: 'success',
-            confirmButtonText: 'Visualizza',
+            confirmButtonText: 'Stato',
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              this.router.navigate(['/pages/ticket']);
+              this.router.navigate(['/pages/ticket/history']);
             }
           });
         }, 500);
@@ -93,6 +101,9 @@ export class OpenTicketComponent implements OnInit {
   }
 
   createTicket() {
+    if (this.subCategory != '') {
+      this.ticket.subCategory = this.subCategory;
+    }
     if (this.ticket.subCategory != '') {
       this.ticketService.saveNewTicket(this.ticket).subscribe();
     }
