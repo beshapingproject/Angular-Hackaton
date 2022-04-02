@@ -1,0 +1,170 @@
+.fl-left {
+  float: left;
+}
+
+.fl-center {
+  float: center;
+}
+
+.fl-right {
+  float: right;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  border-left: 10px solid #fec500;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.ticket {
+  display: table-row;
+  width: 0px !important;
+  background-color: #fff;
+  color: #989898;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ticket + .ticket {
+  margin-left: 2%;
+}
+
+.date {
+  display: table-cell;
+  width: 30%;
+  position: relative;
+  text-align: center;
+  border-right: 2px dashed #dadde6;
+}
+
+.date:before,
+.date:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #dadde6;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.date:after {
+  top: auto;
+  bottom: -15px;
+}
+
+.date time {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.date time span {
+  display: block;
+}
+
+.date time span:first-child {
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 250%;
+}
+
+.date time span:last-child {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+.ticket-cont {
+  display: table-cell;
+  width: 70%;
+  font-size: 85%;
+  padding: 10px 10px 30px 50px;
+}
+
+.ticket-cont h3 {
+  color: #3c3c3c;
+  font-size: 130%;
+}
+
+.row:last-child .ticket:last-of-type .ticket-cont h3 {
+  text-decoration: line-through;
+}
+
+.ticket-cont > div {
+  display: table-row;
+}
+
+.ticket-cont .even-date i,
+.ticket-cont .even-info i,
+.ticket-cont .even-date time,
+.ticket-cont .even-info p {
+  display: table-cell;
+}
+
+.ticket-cont .even-date i,
+.ticket-cont .even-info i {
+  padding: 5% 5% 0 0;
+}
+
+.ticket-cont .even-info p {
+  padding: 30px 50px 0 0;
+}
+
+.ticket-cont .even-date time span {
+  display: block;
+}
+
+.ticket-cont a {
+  display: block;
+  text-decoration: none;
+  width: 80px;
+  height: 30px;
+  background-color: #d8dde0;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 2px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.row:last-child .ticket:first-child .ticket-cont a {
+  background-color: #037fdd;
+}
+
+.row:last-child .ticket:last-child .ticket-cont a {
+  background-color: #f8504c;
+}
+
+@media screen and (max-width: 860px) {
+  .ticket {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .ticket + .ticket {
+    margin-left: 0;
+  }
+  .ticket-cont .even-date,
+  .ticket-cont .even-info {
+    font-size: 75%;
+  }
+}

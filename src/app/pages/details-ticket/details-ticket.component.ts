@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { tick } from '@angular/core/testing';
 import { ActivatedRoute, Router } from '@angular/router';
-import { TicketFilters } from 'src/app/assets/classes/ticket';
+import { TicketFilters, TicketResponse } from 'src/app/assets/classes/ticket';
 import { TicketService } from 'src/app/assets/services/ticket.service';
 
 @Component({
@@ -10,6 +10,8 @@ import { TicketService } from 'src/app/assets/services/ticket.service';
   styleUrls: ['./details-ticket.component.css'],
 })
 export class DetailsTicketComponent implements OnInit {
+  status: string = 'btn-primary';
+  @Output() ticket!: TicketResponse;
   constructor(
     private route: ActivatedRoute,
     private ticketService: TicketService
@@ -21,11 +23,18 @@ export class DetailsTicketComponent implements OnInit {
       const id = Number.parseInt(routerParam);
       this.getDetails(id);
     }
+    if (this.ticket.status === 'CLOSED') {
+      this.status = 'btn-danger';
+    } else if (this.ticket.status === 'IN PROGRESS') {
+      this.status = 'btn-warning';
+    } else {
+      this.status = 'btn-primary';
+    }
   }
 
   getDetails(id: number) {
     this.ticketService.getTicketDetails(id).subscribe((data) => {
-      console.log(data);
+      this.ticket = data;
     });
   }
 }
