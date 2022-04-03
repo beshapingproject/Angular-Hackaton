@@ -10,11 +10,11 @@ import { TicketService } from 'src/app/assets/services/ticket.service';
   styleUrls: ['./details-ticket.component.css'],
 })
 export class DetailsTicketComponent implements OnInit {
-  status: string = 'btn-primary';
   @Output() ticket!: TicketResponse;
   constructor(
     private route: ActivatedRoute,
-    private ticketService: TicketService
+    private ticketService: TicketService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -23,13 +23,13 @@ export class DetailsTicketComponent implements OnInit {
       const id = Number.parseInt(routerParam);
       this.getDetails(id);
     }
-    if (this.ticket.status === 'CLOSED') {
-      this.status = 'btn-danger';
-    } else if (this.ticket.status === 'IN PROGRESS') {
-      this.status = 'btn-warning';
-    } else {
-      this.status = 'btn-primary';
-    }
+  }
+
+  goToHistory() {
+    this.router.navigate(['/pages/ticket/history']);
+  }
+  goToDashboard() {
+    this.router.navigate(['/pages/ticket']);
   }
 
   getDetails(id: number) {

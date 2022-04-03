@@ -18,6 +18,7 @@ import { HistoryTableRowComponent } from './pages/history-ticket/history-table/h
 import { DetailsTicketComponent } from './pages/details-ticket/details-ticket.component';
 import { DetailsInfoComponent } from './pages/details-ticket/details-info/details-info.component';
 import { ChatMessagesComponent } from './pages/details-ticket/chat-messages/chat-messages.component';
+import { ChatMessagesMockComponent } from './pages/details-ticket/chat-messages-mock/chat-messages-mock.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ChatMessagesComponent } from './pages/details-ticket/chat-messages/chat
     DetailsTicketComponent,
     DetailsInfoComponent,
     ChatMessagesComponent,
+    ChatMessagesMockComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [],

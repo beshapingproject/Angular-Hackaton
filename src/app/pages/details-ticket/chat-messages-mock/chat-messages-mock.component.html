@@ -1,6 +1,6 @@
 <!-- Chat Box-->
-<div class="col-12 px-0" style="max-height: 250px;">
-    <div class="px-4 py-5 chat-box bg-white" style="max-height: 200px;">
+<div class="col-12 px-0" style="max-height: 350px;">
+    <div class="px-4 py-5 chat-box bg-white" style="max-height: 300px;">
         <!-- Reciever Message-->
         <div class="media w-50 ml-auto mb-3">
             <div class="media-body">
@@ -10,6 +10,18 @@
                 <p class="small text-muted">{{time}} | {{month}} {{day}}</p>
             </div>
         </div>
+        <!-- Sender Message-->
+        <div class="media w-50 mb-3"><img
+                src="https://wedigitech.be-tse.it/wp-content/themes/be-we-theme/assets/images/avatars/user-avatar.png"
+                alt="user" width="50" class="rounded-circle">
+            <div class="media-body ml-3">
+                <div class="bg-light rounded py-2 px-3 mb-2">
+                    <p class="text-small mb-0 text-muted">{{hr.message}}</p>
+                </div>
+                <p class="small text-muted">{{hr_time}} | {{hr_month}} {{hr_day}}</p>
+            </div>
+        </div>
+
     </div>
 
     <!-- Typing area -->

@@ -17,6 +17,13 @@ export class DetailsInfoComponent implements OnInit {
 
   ngOnInit(): void {
     this.getDate(this.ticket.created);
+    if (this.ticket.status === 'CLOSED') {
+      this.status = 'btn-danger';
+    } else if (this.ticket.status === 'IN PROGRESS') {
+      this.status = 'btn-warning';
+    } else {
+      this.status = 'btn-primary';
+    }
   }
   getDate(date: string) {
     this.day = date.substring(8, 10);

@@ -9,12 +9,14 @@
                                 alt="" srcset="">
                             Dettagli Ticket #{{ticket.id}}</h3>
                         <div class="elementor-button-wrapper inline">
-                            <a class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                            <a class="elementor-button-link elementor-button elementor-size-sm"
+                                (click)="goToDashboard()" role="button">
                                 <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-text">Torna a FAQ</span>
                                 </span>
                             </a>
-                            <a class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                            <a class="elementor-button-link elementor-button elementor-size-sm" (click)="goToHistory()"
+                                role="button">
                                 <span class="elementor-button-content-wrapper">
                                     <span class="elementor-button-text">Torna alla lista</span>
                                 </span>
@@ -24,16 +26,16 @@
                     <!-- Card content-->
                     <div class="card-body">
                         <app-details-info [ticket]="ticket"></app-details-info>
-                        <div class="elementor-button-wrapper" style="margin-top: -70px;">
-                            <a class="elementor-button-link elementor-button elementor-size-sm" role="button">
-                                <span class="elementor-button-content-wrapper">
-                                    <span class="elementor-button-text">Download Imported File</span>
-                                </span>
-                            </a>
+                        <div class="elementor-button-wrapper" style="margin-top: -80px; margin-right: 50px;">
+                            <button class="btn btn-sm text-dark"
+                                style="width: 200px; margin-top: 10px; background-color: #E9EFF3;">
+                                Download Imported File</button>
                         </div>
                         <div style="margin-bottom: 50px;"></div>
                         <hr>
-                        <app-chat-messages></app-chat-messages>
+                        <app-chat-messages *ngIf="ticket.status == 'NEW'" [ticket]="ticket"></app-chat-messages>
+                        <app-chat-messages-mock *ngIf="ticket.status != 'NEW'" [ticket]="ticket">
+                        </app-chat-messages-mock>
                     </div>
                 </div>
             </section>
